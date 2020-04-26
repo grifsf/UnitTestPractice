@@ -56,7 +56,7 @@ TEST(PracticeTest, is_symbols_palindrome)
     bool actual = obj.isPalindrome("!$!");
     ASSERT_TRUE(actual);
 }
-TEST(PracticeTest, is_words_palindrome)
+TEST(PracticeTest, is_multiple_words_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("AB BA");
@@ -71,6 +71,19 @@ TEST(PracticeTest, is_letter_palindrome)
 TEST(PracticeTest, is_space_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("  ");
+    bool actual = obj.isPalindrome("   ");
     ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_space_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("  AAA  ");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_space_break_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("  aja ");
+    ASSERT_FALSE(actual);
 }
