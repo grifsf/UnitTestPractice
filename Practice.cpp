@@ -34,7 +34,8 @@ bool Practice::isPalindrome(string input)
 {
   for(int i=0; i < input.size(); i++)
   {
-    if( input[i] < 'A' || input[i] > 'Z' )
+    //input[i].tolower();
+    if( input[i] >= 'a' && input[i] <='z' )
     {
       //change lower case to upper case
       input[i] = input[i] - ('a' - 'A');
