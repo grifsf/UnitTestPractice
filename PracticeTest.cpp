@@ -75,7 +75,7 @@ TEST(PracticeTest, is_space_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_space_palindrome)
+TEST(PracticeTest, is_spaces_with_word_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("  AAA  ");
