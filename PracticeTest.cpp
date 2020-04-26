@@ -20,3 +20,57 @@ TEST(PracticeTest, is_simple_palindrome)
     bool actual = obj.isPalindrome("aa");
     ASSERT_TRUE(actual);
 }
+TEST(PracticeTest, is_not_simple_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aB");
+    ASSERT_FALSE(actual);
+}
+TEST(PracticeTest, is_empty_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_odd_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aba");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_upper_and_lower_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aA");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_numer_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("11");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_symbols_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("!$!");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_words_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("AB BA");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_letter_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("A");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_space_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("  ");
+    ASSERT_TRUE(actual);
+}
