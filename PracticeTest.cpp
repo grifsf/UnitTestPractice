@@ -95,8 +95,8 @@ TEST(PracticeTest, same_number)
   int second=1;
   int third=1;
   obj.sortDescending(first,second,third);
-  ASSERT_GE(third,second);
-  ASSERT_GE(second,first);
+  ASSERT_GE(first,second);
+  ASSERT_GE(second,third);
 }
 TEST(PracticeTest, ascending)
 {
@@ -105,8 +105,8 @@ TEST(PracticeTest, ascending)
   int second=2;
   int third=3;
   obj.sortDescending(first,second,third);
-  ASSERT_GE(third,second);
-  ASSERT_GE(second,first);
+  ASSERT_GE(first,second);
+  ASSERT_GE(second,third);
 }
 TEST(PracticeTest, descending)
 {
@@ -115,8 +115,8 @@ TEST(PracticeTest, descending)
   int second=2;
   int third=1;
   obj.sortDescending(first,second,third);
-  ASSERT_GE(third,second);
-  ASSERT_GE(second,first);
+  ASSERT_GE(first,second);
+  ASSERT_GE(second,third);
 }
 TEST(PracticeTest, negatives)
 {
@@ -125,6 +125,6 @@ TEST(PracticeTest, negatives)
   int second=-2;
   int third=-1;
   obj.sortDescending(first,second,third);
-  ASSERT_GE(third,second);
-  ASSERT_GE(second,first);
+  ASSERT_GE(first,second);
+  ASSERT_GE(second,third);
 }
