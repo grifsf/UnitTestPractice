@@ -6,25 +6,25 @@ using std::string;
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
-{
+{//1,2,2
   if( first < second )
   {
     int temp = first;
     first = second;
     second = temp;
-  }
-  if( second < third ) //2,3,1
+  }//2,1,2
+  if( second < third ) 
   {
     int temp = second;
     second = third;
     third = temp;
   }
-  if( first < third)//2,3,1
+  /*if( first < third)//2,3,1
   {
     int temp = first;
     first = third;
     third = temp;
-  }
+  }*/
   if( first < second )
   {
     int temp = first;
