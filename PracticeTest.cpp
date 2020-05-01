@@ -87,3 +87,44 @@ TEST(PracticeTest, is_space_break_palindrome)
     bool actual = obj.isPalindrome("  aja ");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, same_number)
+{
+  Practice obj;
+  int first=1;
+  int second=1;
+  int third=1;
+  obj.sortDescending(first,second,third);
+  ASSERT_GE(third,second);
+  ASSERT_GE(second,first);
+}
+TEST(PracticeTest, ascending)
+{
+  Practice obj;
+  int first=1;
+  int second=2;
+  int third=3;
+  obj.sortDescending(first,second,third);
+  ASSERT_GE(third,second);
+  ASSERT_GE(second,first);
+}
+TEST(PracticeTest, descending)
+{
+  Practice obj;
+  int first=3;
+  int second=2;
+  int third=1;
+  obj.sortDescending(first,second,third);
+  ASSERT_GE(third,second);
+  ASSERT_GE(second,first);
+}
+TEST(PracticeTest, negatives)
+{
+  Practice obj;
+  int first=-3;
+  int second=-2;
+  int third=-1;
+  obj.sortDescending(first,second,third);
+  ASSERT_GE(third,second);
+  ASSERT_GE(second,first);
+}

@@ -13,17 +13,23 @@ void Practice::sortDescending(int & first, int & second, int & third)
     first = second;
     second = temp;
   }
-  if( second < third )
+  if( second < third ) //2,3,1
   {
     int temp = second;
     second = third;
     third = temp;
   }
-  if( first < third )
+  if( first < third)//2,3,1
   {
     int temp = first;
     first = third;
     third = temp;
+  }
+  if( first < second )
+  {
+    int temp = first;
+    first = second;
+    second = temp;
   }
 }
 
@@ -38,7 +44,7 @@ bool Practice::isPalindrome(string input)
     if( input[i] >= 'a' && input[i] <='z' )
     {
       //change lower case to upper case
-      input[i] = input[i] - ('a' - 'A');
+      input[i] = input[i] - ('a' - 'A');//32
     }
   }
   for(int i=0; i < input.size()/2; i++)
