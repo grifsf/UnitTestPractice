@@ -128,3 +128,13 @@ TEST(PracticeTest, negatives)
   ASSERT_GE(first,second);
   ASSERT_GE(second,third);
 }
+TEST(PracticeTest, notsortall)
+{
+  Practice obj;
+  int first=1;
+  int second=1;
+  int third=2;
+  obj.sortDescending(first,second,third);
+  ASSERT_GE(first,second);
+  ASSERT_GE(second,third);
+}
